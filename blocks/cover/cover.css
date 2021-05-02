@@ -1,0 +1,56 @@
+.cover {
+  max-width: 1184px;
+  max-height: 740px;
+  height: 740px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 42px;
+  z-index: 0;
+  text-decoration: none;
+  background-image: url(../../image/поезда.png);
+  background-size: cover;
+  box-sizing: border-box;
+ 
+}
+
+.cover:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2A2C2F;
+  opacity: 0.3;
+  z-index: -1;
+  transition: opacity 300ms ease-in-out;
+}
+
+.cover:hover:before {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 1024px) {
+  .cover {
+    max-width: 1024px;
+    height: 640px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cover {
+    max-width: 768px;
+    height: 480px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .cover {
+    max-width: 320px;
+    height: 200px;
+    }
+}

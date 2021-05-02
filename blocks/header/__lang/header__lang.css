@@ -1,0 +1,11 @@
+.header__lang {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+}
+
+@media screen and (max-width: 320px) {
+  .header__lang {
+    padding-right: 16px;
+  }
+}
